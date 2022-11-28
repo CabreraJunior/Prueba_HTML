@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+  
+a{
+  text-decoration: none;
+}
+  
+.navbar{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #fabb0f;
+  font-size: 20px;
+  top: -200px;
+  transition: top 0.2s;
+}
+  
+.logo{
+  margin-left: 5%;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo_header{
+  display: flex;
+  margin-left: 2%;
+}
+  
+.main_nav{
+  padding-top: 5px;
+  display: flex;
+  width: 50%;
+  float: right;
+  margin-right: 2%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.main_nav li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  transition: all ease-in-out 250ms;
+}
+
+.main_nav li a::after{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.2em;
+  width: 0%;
+  background-color: #ffffff;
+  bottom: -0.8em;
+  transition: all ease-in-out 250ms;
+}
+
+.main_nav li a:hover::after{
+  width: 100%;
+}
+
+.main_nav li a:hover{
+  color: #ffffff;
+}
+  
+body{
+    background-color: black;
+    color: #054783;
+}
+header{
+    height: 500px;
+    width: 100%;
+    border-left: 0;
+    background-image: url(Friends_banner.jpg);
+    font-size: 35px;
+    display: grid;
+    margin-bottom: 0%;
+
+}
+.mainEvent{
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    height: 317px;
+    width: 577px;
+    border-width: 1px;
+    border-color: rgb(193, 193, 214);
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 1%;
+    display:flex;
+    flex-direction: column;
+}
+main{
+    font-size: 30px;
+    height: 575px;
+    background-color: #f4f4f4;
+}
+content{
+    margin-left: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
