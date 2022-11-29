@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "GWFF";
+  src: url(fonts/GabrielWeissFriendsFont-VGq7B.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
   
 a{
   text-decoration: none;
@@ -10,31 +17,29 @@ a{
 .navbar{
   display: flex;
   position: fixed;
-  flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  padding-top: 1%;
+  padding-top: 1.3%;
   padding-bottom: 1%;
   background-color: #fabb0f;
   font-size: 20px;
   top: -200px;
   transition: top 0.2s;
+  z-index: 3;
 }
   
 .logo{
   margin-left: 5%;
   color: #ffffff;
+  font-family: GWFF;
   font-size: 25px;
-  font-weight: bold;
 }
 
 .logo_header{
-  display: flex;
-  margin-left: 2%;
+  margin-left: 1%;
 }
   
 .main_nav{
-  padding-top: 5px;
   display: flex;
   width: 50%;
   float: right;
@@ -46,8 +51,8 @@ a{
 .main_nav li a{
   text-decoration: none;
   color: #000000;
-  font-size: 25px;
-  font-weight: bold;
+  font-family: GWFF;
+  font-size: 24px;
   position: relative;
   transition: all ease-in-out 250ms;
 }
@@ -56,10 +61,10 @@ a{
   content: "";
   position: absolute;
   display: block;
-  height: 0.2em;
+  height: 0.1em;
   width: 0%;
   background-color: #ffffff;
-  bottom: -0.8em;
+  bottom: -0.6em;
   transition: all ease-in-out 250ms;
 }
 
@@ -72,7 +77,7 @@ a{
 }
   
 body{
-    background-color: black;
+    background-color: white;
     color: #054783;
 }
 header{
@@ -80,9 +85,10 @@ header{
     width: 100%;
     border-left: 0;
     background-image: url(Friends_banner.jpg);
-    font-size: 35px;
-    display: grid;
+    font-size: 60px;
+    display: flex;
     margin-bottom: 0%;
+    color: #eedf0e;
 
 }
 .mainEvent{
@@ -90,7 +96,7 @@ header{
     font-weight: bold;
     border: 3px solid #f1f1f1;
     height: 317px;
-    width: 577px;
+    width: 700px;
     border-width: 1px;
     border-color: rgb(193, 193, 214);
     margin: auto;
@@ -98,6 +104,9 @@ header{
     margin-left: 1%;
     display:flex;
     flex-direction: column;
+}
+p{
+    margin-bottom: 5%;
 }
 main{
     font-size: 30px;
@@ -108,4 +117,56 @@ content{
     margin-left: 1.5%;
     display: flex;
     flex-direction: column;
+}
+h2{
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+.pmain{
+    margin-bottom: 3.25%;
+    margin-left: 10%;
+}
+.meetTeam{
+    margin-top: -1.1%;
+    height: 400px;
+    background-color: white;
+}
+.meetTeam>h2{
+    text-align: center;
+    margin-left: 0%;
+}
+.teamgrid{
+    height: 350px;
+    display: grid;
+    grid-template-rows: 1fr 30% 10%;
+    grid-template-columns: 20% 1fr 1fr 1fr 20%;
+    grid-template-areas: 
+                  ". img1 img2 img3  ."
+                  ". info1 info2 info3 ."
+                  ". . . . .";
+    text-align: center;
+}
+
+.staff1{
+    grid-area: img1;
+}
+.staff2{
+    grid-area: img2;
+}
+.staff3{
+    grid-area: img3;
+}
+.desc1{
+    grid-area: info1;
+}
+.desc2{
+    grid-area: info2;
+}
+.desc3{
+    grid-area: info3;
+}
+img{
+    height: 90%;
+    width: 50%;
+    border-radius: 100px;
 }

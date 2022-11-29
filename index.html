@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Friends-Event</title>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo_header"><a href="index.html#start" class="logo"><img alt="Friends" src="fLogoR.png" class="f_logo"></a></div>
+        <div class="logo_header"><a href="index.html#start" class="logo"><img alt="Friends" src="resources/fLogoR.png"></a></div>
         <ul class="main_nav">
-          <li><a href="index.html#start" class="nav_links">Home</a></li>
-          <li><a href="index.html#events" class="nav_links">Events</a></li>
+          <li><a href="#start" class="nav_links">Home</a></li>
+          <li><a href="#events" class="nav_links">Events</a></li>
           <li><a href="#" class="nav_links">Contacts</a></li>
-          <li><a href="index.html#meet" class="nav_links">Meet the Team</a></li>
+          <li><a href="#meet" class="nav_links">Meet the Team</a></li>
         </ul>
-      </nav>
+    </nav>
       
     <header id="start">
         <section class="mainEvent">
@@ -28,35 +28,49 @@
         </section>
     </header>
     <main>
-        <section class="openingTime" id="events">
-            <p>Opening time: 11:00</p>
-        </section>
-        <section class="QACast">
-            <p>Q&A with the cast: 12:00</p>
-        </section>
-        <section class="behindScenes">
-            <p>Behind the scenes highlight: 14:00</p>
-        </section>
-        <section class="QACreators">
-            <p>Q&A with the creators of the show: 16:00</p>
-        </section>
-        <section class="readingTable">
-            <p>Reading table of never shown before material: 17:00</p>
-        </section>
-        <section class="closingCeremony">
-            <p>Closing ceremony: 18:00</p>
-        </section>
+        <content id="events">
+            <h2>Event Schedule:</h2>
+            <section class="openingTime">
+                <p class="pmain">Opening time: 11:00</p>
+            </section>
+            <section class="QACast">
+                <p class="pmain">Q&A with the cast: 12:00</p>
+            </section>
+            <section class="behindScenes">
+                <p class="pmain">Behind the scenes highlight: 14:00</p>
+            </section>
+            <section class="QACreators">
+                <p class="pmain">Q&A with the creators of the show: 16:00</p>
+            </section>
+            <section class="readingTable">
+                <p class="pmain">Reading table of never shown before material: 17:00</p>
+            </section>
+            <section class="closingCeremony">
+                <p class="pmain">Closing ceremony: 18:00</p>
+            </section>
+        </content>
         <section class="meetTeam" id="meet">
             <h2>Meet the team</h2>
-            <article>
-                <p>Sofia Bufallo - Event Manager</p>
-            </article>
-            <article>
-                <p>Joel Geller - Contact</p>
-            </article>
-            <article>
-                <p>Raquel Verde - NBC Executive</p>
-            </article>
+            <div class="teamgrid">
+                <article class="staff1">
+                    <img src="Friends_banner.jpg" alt="Sofia Buffalo">
+                </article>
+                <article class="desc1">
+                    <p>Sofia Bufallo - Event Manager</p>
+                </article>
+                <article class="staff2">
+                    <img src="Friends_banner.jpg" alt="Joel Geller">
+                </article>
+                <article class="desc2">
+                    <p>Joel Geller - Contact</p>
+                </article>
+                <article class="staff3">
+                    <img src="Friends_banner.jpg" alt="Raquel Verde">
+                </article>
+                <article class="desc3">
+                    <p>Raquel Verde - NBC Executive</p>
+                </article>
+            </div>
         </section>
     </main>
     <script src="index.js"></script>
